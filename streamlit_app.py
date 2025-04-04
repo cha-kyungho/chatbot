@@ -15,6 +15,8 @@ st.write(
 # OpenAI API 키 가져오기  
 openai_api_key = st.secrets["openai"]["api_key"] 
 
+st.write(openai_api_key)
+
 if not openai_api_key:  
     st.info("계속하려면 OpenAI API 키를 입력해 주세요.", icon="🗝️")  
 else:  
