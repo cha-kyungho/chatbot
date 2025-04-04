@@ -3,7 +3,7 @@ import openai
 from openai import OpenAI  
 
 # 제목과 설명 표시  
-st.title("💬 제주도 여행 정보 챗봇")  
+st.title("💬제주도 여행 정보 챗봇💬")  
 st.write(  
     "여기 제주도 여행 정보를 제공하는 간단한 챗봇 서비스입니다."  
     "이 앱을 사용하려면 OpenAI API 키가 필요하며, 여기에서 발급받을 수 있습니다."  
@@ -31,7 +31,7 @@ else:
         if not st.session_state.messages:  
             system_message = {  
                 "role": "system",  
-                "content": "당신은 제주도 여행에 대한 정보에 친절하고 유용한 챗봇입니다."  
+                "content": "당신은 여행가이드 이며, 제주도 여행에 대한 정보를 친절하게 안내하는 챗봇입니다."  
             }  
             st.session_state.messages.append(system_message)  
 
