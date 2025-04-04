@@ -11,7 +11,10 @@ st.write(
 )  
 
 # 사용자에게 OpenAI API 키 입력 요청  
-openai_api_key = st.text_input("OpenAI API Key", type="password")  
+#openai_api_key = st.text_input("OpenAI API Key", type="password")  
+# OpenAI API 키 가져오기  
+openai_api_key = st.secrets["openai"]["api_key"] 
+
 if not openai_api_key:  
     st.info("계속하려면 OpenAI API 키를 입력해 주세요.", icon="🗝️")  
 else:  
