@@ -1,4 +1,5 @@
 import streamlit as st  
+import openai
 from openai import OpenAI  
 
 # 제목과 설명 표시  
